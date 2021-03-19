@@ -1,0 +1,542 @@
+
+/*resetting default css*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*setting up container for landing section*/
+
+#container-up{
+    background-image: url("1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    animation: change_background 30s infinite linear;
+    animation-timing-function: ease-out;
+}
+
+/* styling the header*/
+#header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+}
+
+/* styling brand name and tagline*/
+#brand{
+    text-align: center;
+    background-color: rgb(251 235 41);;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: -2px 2px 0px 4px black;
+    border-radius: 18px;
+    height: fit-content;
+}
+
+#brand-name,#tag-line{
+    color: #ce4a4a;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#brand-name{
+    text-shadow: -1px 2px black;
+}
+
+#brand img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#tag-line{
+    text-shadow: -1.2px 1px black;
+}
+
+#light{
+    width: 100%;
+    height: 10px;
+    background-image: url("light.gif");
+    background-size: contain;
+}
+/*styling upper nav menu*/
+
+#nav-item li{
+    padding:15px;
+    margin:10px;
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgb(75, 2, 2);
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#nav-item li:hover{
+    cursor: pointer;
+}
+
+/*styling links*/
+#nav-item a{
+    color: white;
+}
+
+ul a, a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#dropdown a{
+    color:black
+}
+
+#container-menu a:hover,#nav-item a:hover{
+    color:rgb(253, 93, 45);
+    text-decoration: none;
+}
+
+
+
+/*styling center*/
+#center h1,h5{
+    color: white !important;
+    text-align: center;
+}
+
+#center h1{
+    font-size: 50px;
+    font-family: 'Langar', cursive;
+    text-shadow: 5px 5px black;
+}
+
+#center h5{
+        font-size: 24px;
+        font-family: 'Darker Grotesque', sans-serif;
+        text-shadow: 2px 2px black;
+}
+
+#center{
+    background-color: rgb(185 46 46 / 85%);
+    border-radius: 41px;
+    padding: 10px;
+    padding-left: 23px;
+    padding-right: 22px;
+    margin-top: 10px;
+    border: 2px solid black;
+    box-shadow: -5px 5px 0px;
+}
+
+/*stling center menu*/
+
+#container-menu{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#container-menu h3{
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color:#39210e;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#container-menu h3:hover{
+    box-shadow:5px 5px white;
+    background-color: #e3b87d;
+}
+
+#container-menu a:hover{
+    color: black;
+}
+
+#landing-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 84vh;
+    flex-wrap: wrap;
+}
+
+#landing-center img{
+    max-height: 300px;
+    max-width: 300px;
+}
+
+/*styling menu*/
+
+#menu{
+    margin-top: 30px;
+    text-align: center;
+    padding-top:20px;
+    background-image: url("Menu/menu-bg-pc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    height: fit-content;
+}
+
+#menu-heading{
+    display: flex;
+    justify-content: center;
+}
+
+#menu-heading h1{
+    font-size: 50px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(145, 9, 9);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    background-color: #ffff23;
+}
+
+#menu-category,#gallery-category{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu-category h2,#gallery-category h2{
+    font-family: 'Lobster', cursive;
+    border: 2px solid black;
+    padding:10px;
+    
+}
+
+#menu-category h2{
+    background-image: url("Menu/menu-category-bg.jpg");
+}
+
+#menu-category h2:hover,#gallery-category h2:hover{
+    cursor: pointer;
+}
+
+#menu-items,#gallery-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    border:2px solid black;
+    border-radius: 30px;
+    box-shadow: -5px 5px 5px 3px black;
+    max-height: 75vh;
+    overflow: auto;
+}
+
+#menu-items img,#gallery-items img{
+    width: 200px;
+    height: 200px;
+    margin:2vw;
+    border:1px solid black;
+    box-shadow: -5px 5px 2px 5px rgb(0, 0, 0);
+}
+
+#menu-items h3,#gallery-items h3{
+    font-family: 'Langar', cursive;
+    width: fit-content;
+    margin: auto;
+}
+
+#menu-items h3{
+    color:black;
+}
+
+#menu-items h3:hover{
+    cursor: pointer;
+    color: rgb(255, 248, 149);
+    text-decoration: underline;
+    
+}
+
+#menu-items img:hover,#gallery-items img:hover{
+    box-shadow: -5px 5px 2px 2px yellow;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#menu-items{
+    background-color: #fbce3b;
+}
+
+.active-menu{
+    text-decoration: underline;
+    color:maroon;
+}
+
+/*Styling gallery*/
+
+#gallery  h1{
+   font-size: 50px;
+   font-family:'Baloo Bhai 2', cursive;
+   color: black;
+   border: 2px solid black;
+   width: fit-content;
+   margin-left: auto;
+   margin-right: auto;;
+   padding-right: 10px;
+   padding-left: 10px;
+   border-radius: 10px;
+   background-image: url("gallery/gallery-head-bg.jpg");
+   background-size: contain;
+}
+
+#gallery{
+    margin-top: 50px;
+    background-image: url("gallery/gallery-bg.jpg");
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: fit-content;
+}
+
+#gallery-category{
+    padding-right: 100px;
+}
+
+#gallery-category h2{
+    background-image: url("gallery/gallery-category-bg.jpg");
+}
+
+#gallery-items{
+    max-height: 600px;
+    overflow: auto;
+    background-image: url("gallery/galleryy-item-bg.jpg");
+    background-size: cover;
+}
+
+#gallery-item h3{
+    color: black;
+}
+.active-gallery{
+    text-decoration: underline;
+    color:rgb(145, 9, 9);
+}
+
+#lightbox{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0,0.8);
+    display:none;
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img{
+    max-height: 80%;
+    max-width: 80%;
+    padding:10px;
+    border-radius: 30px;
+    box-shadow: -3px 3px 3px 3px blanchedalmond;
+}
+
+
+/*styling about section*/
+
+#about{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: fit-content;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px rgb(187, 37, 37) double;
+    border-radius: 10px;
+} 
+
+#about-main{
+    background-image: url("About/about-main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#about h1,h3{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#about h1{
+    font-size: 50px;
+    font-family:'Baloo Bhai 2', cursive;
+    color: maroon;
+    text-decoration: underline;
+}
+
+#about h3{
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: rgba(238, 205, 15, 0.877);
+}
+
+#imgcont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#logo{
+    width: 300px;
+    height: 300px;
+    animation:bouncelogo 1.5s infinite linear;
+}
+
+#about-section{
+    margin-left: 50px;
+    margin-right: 50px;
+    Margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 2px solid black;
+    box-shadow: -5px 5px 5px 3px maroon;
+    background-image: url("About/section-bg.jpg");
+}
+
+#para{
+    margin-top: 40px;
+    overflow: auto;
+    max-height: 550px;
+}
+
+#ownercont{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#owner{
+    height: 200px;
+    width: 180px;
+    margin-top: 50px;
+    box-shadow: -5px 5px 2px 2px #b5b5b5;
+    border:1px solid white;
+    border-radius: 10px;
+
+}
+
+#about h6{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    color: white;
+}
+
+#about p{
+    font-family: 'Courgette', cursive;
+    margin-top: 10px;
+    color: white;
+}
+
+
+/*styling the footer starts here*/
+
+#footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height:fit-content;
+    background-color: rgb(14 40 74 / 96%);
+}
+
+#footer a{
+    text-decoration: underline;
+}
+
+#footer h4{
+    margin-top: 5px;
+    font-size: 1rem !important;
+}
+
+#footer h3{
+    text-align: center;
+    color: white;
+}
+
+#social,#adress{
+    padding:5px;
+}
+
+.icons img{
+    width: 20px;
+    height: 20px;
+    margin:10px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+#copyright{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Key frames for animation*/
+@keyframes bouncelogo{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes change_background{
+    0%,15%,100%{
+        background-image: url("1.jpg");           
+    }
+
+    20%,35%{
+        background-image: url("2.jpg");               
+    }
+
+    40%,55%{
+        background-image: url("3.jpg");        
+    }
+
+    60%,75%{
+        background-image: url("4.jpg");
+    }
+
+    80%,95%{
+        background-image: url("5.jpg");
+    }
+}

@@ -1,0 +1,217 @@
+@media screen and (max-width: 700px){
+
+    #brand{
+        height: fit-content;
+        box-shadow: -2px 2px black;
+    }
+
+    #container-up{
+        background-image: url("1m.jpg");
+        animation: change_background 12s infinite linear;
+        animation-timing-function: ease-out;
+    }
+
+    .navbar{
+        background-color: #ffc100;
+        padding: 0px !important;
+        margin-left: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    #tag-line{
+        font-size: xx-small;
+        text-shadow: -0.2px 1px black;
+    }
+
+    #light{
+        height: 5px;
+    }
+
+    #brand-name{
+        font-size: small;
+        text-shadow: -1px 1px black;
+    }
+
+    #center{
+        width:90vw;
+        box-shadow: -2px 2px 5px;
+        border-radius: 30px;
+    }
+
+    #center h1{
+        font-size: 1.2em;
+        text-shadow: 2px 2px black;
+    }
+
+    #center h5{
+        font-size: 0.9em;
+    }
+
+    #landing-center img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    #imgcont img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #container-menu h3{
+        font-size: x-small;
+    }
+
+    #menu-heading h1{
+        font-size: 2em;
+    }
+
+    #menu-category h2,#gallery-category h2{
+        font-size: 1.5em;
+        margin-left: 3px;
+        margin-top: 20px;
+        border: 2px solid black;
+        padding:3px;
+        text-align: center;
+    }
+
+    #menu-items,#gallery-items{
+        max-height: 500px;
+        overflow: auto;
+        padding-bottom: 50px;
+        width: 90vw;
+    }
+
+    #menu-items img,#gallery-items img{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    #menu-items h3,#gallery-items h3{
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+
+    #menu-items img:hover{
+        box-shadow: -5px 5px 2px 5px rgb(0, 0, 0);;
+        cursor: pointer;
+        transform: none;
+        transition: none;
+    }
+    
+    #menu-items h3:hover{
+        cursor: pointer;
+        color: white;
+        text-decoration: none;    
+    }
+
+    #gallery h1{
+        font-size: 2em;
+    }
+
+    #gallery-category{
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    #about{
+        width: 100vw;
+        border: none;
+        margin-top:0;
+        padding-top: 5px;
+    }
+    
+    #about-section p{
+        margin-bottom:40px;
+        font-size: 1em;
+    }
+
+    #about-section{
+        padding-bottom: 50px;
+        height: fit-content;
+        width:90vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #para{
+        margin-top: 40px;
+        max-height: 400px;
+    }
+
+    #owner{
+        height: 180px;
+        width:150px;
+    }
+
+    #about-main{
+        padding-bottom: 5px;
+    }
+
+    #footer{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #copyright{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #copyright h3{
+        font-size: large;
+    }
+
+    #adress{
+        width: 80vw;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:10px;
+    }
+
+    #social{
+        margin-top: 10px;
+    }
+
+    #nav-item ul{
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background-color: #a8302e;
+        border-radius: 10px;
+        padding: 10px;
+        padding-top: 20px;
+        border: 4px solid black;
+        max-width: 300px;
+    }
+
+    #nav-item a:hover{
+        color: yellow;
+    }
+
+    #nav-item li{
+        min-width: 108px;
+        max-width: 300px;
+    }
+
+    .show a{
+        font-size: x-small;
+    }
+
+    .show a:hover{
+        color:black;
+    }
+    @keyframes change_background {
+        0%,45%{
+            background-image: url("1m.jpg");
+        }
+        
+        50%,100%{
+            background-image: url("2m.jpg");
+        }
+
+    }
+}
